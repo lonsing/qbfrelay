@@ -14,7 +14,7 @@ Boolean formula (QBF) preprocessors. Currently, the preprocessors
 and [QRATPre+](https://lonsing.github.io/qratpreplus/) are
 supported. Other tools can easily be integrated.
 
-QBFRelay runs the integrated preprcessors with a time limit in
+QBFRelay runs the integrated preprocessors with a time limit in
 multiple rounds on a given QBF in prenex CNF. Thereby, the formula
 resulting from the application of one preprocessor is used as input of
 the next preprocessor in an execution sequence. Preprocessing stops as
@@ -28,7 +28,7 @@ Gallery: Behind the Scenes. Artif. Intell., vol. 237,
 
 ### USAGE INFORMATION ###
 
-Run `qbfrelay-1.0.sh <options> <file.qdimacs>`
+Run `qbfrelay.sh <options> <file.qdimacs>`
 
 where `<options>` is a combination of the following:
 
@@ -52,7 +52,7 @@ where `<options>` is a combination of the following:
 The latest release is available from
 [GitHub](https://github.com/lonsing/qbfrelay).
 
-In the file *qbfrelay-1.0.sh*, adapt the paths to the directory
+In the file *qbfrelay.sh*, adapt the paths to the directory
 containing binaries (variable *BINDIR*, default `./`) and temporary
 files (variable *TMPBASEDIR*, default `/tmp/`), if necessary.
 
@@ -83,7 +83,7 @@ Download and compile the following preprocessors:
 
 Put all binaries of tools into the *BINDIR* directory set above.
 
-In the file *qbfrelay-*.sh*, adapt the paths to the binaries of the
+In the file *qbfrelay.sh*, adapt the paths to the binaries of the
 preprocessors (variables *BLOQQER*, *HQSPRE*, *QXBF*, *RUNSOLVER*,
 *DEPQBF*, and *QRATPREPLUS*).
 
